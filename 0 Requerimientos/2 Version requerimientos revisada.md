@@ -22,9 +22,7 @@ El bot debe poder asignar conversaciones a los siguientes departamentos:
     *   contratar\_servicio
     *   Se debe agregar la etiqueta de **servicio lento**. Tenga en cuenta que "servicio lento" y "sin servicio" corresponden en el sistema a un ticket de "Soporte técnico" que tiene ID 1.
 *   **Validar si la conversación está dentro del horario laboral**. Si está fuera, dejar la conversación abierta.
-*   **Validar si el día es feriado** utilizando un listado anual. Debe reconocer solo los **feriados nacionales inamovibles de Argentina** indicados en la página web especificada (los de colores azules). Si es feriado, responder que no es un día laboral y dar aviso al cliente que puede que nadie responda su derivación hasta que vuelvan a la oficina, y ahí derivar.
-*   Si pasan **4 horas sin respuesta de un agente humano** después de una derivación, **reiterar la derivación 1 vez** (para que suba arriba del chat).
-*   Si pasan **más de 24 horas sin respuesta a la segunda derivación**, **archivar el chat** para que el cliente pueda volver a hablar con el bot.
+*   **Validar si el día es feriado** utilizando un listado anual. Ese listado será cargado anualmente por GEO SA en las bases de conocimiento del bot
 *   **Archivar el chat si el bot entiende que el motivo de reclamo está resuelto**, es decir, si el motivo de la charla ya está encaminada y no hay nada más que hablar (ej: si se abrió ticket y debe aguardar el llamado del técnico).
 *   Las conversaciones con interés en contratar el servicio deben **quedar en estado abierto solo si el cliente solicita consultar algo particular**. Si el cliente ya dio sus datos y se hizo un ticket de instalación (usando los IDs correspondientes), entonces **archivar la conversación si el flujo finalizó** (ej: el cliente dijo gracias).
 
@@ -46,18 +44,18 @@ El bot debe poder asignar conversaciones a los siguientes departamentos:
 *   Agregar otro domicilio al plan: derivar a Administración.
 *   Cambio de ancho de banda: derivar a Administración.
 *   Solicitud de reconexión: derivar a Administración.
-*   Ver resumen de cuenta a través de un enlace al portal.
+*   Ver resumen de cuenta a través de un enlace al portal que se informa
 *   Consultar saldo mediante la API.
 *   Solicitar facturas de un período: derivar a Administración. Si el cliente tiene factura A, B o C, pasarle el portal, avisarle que puede ver sus facturas ahí y si no le aparece, que dé aviso y entonces proceder a derivar a un agente humano.
-*   Solicitud de baja: generar ticket y asignar a Soporte. Se generan bien como en el sistema viejo.
+*   Solicitud de baja: generar ticket y asignar a Soporte. El bot IVR lo hace bien
 *   Asistencia técnica con imágenes (casos de fibra y antena).
 *   Reportar avería: generar ticket y asignar a Soporte.
 *   Informar sobre avería en la zona ("Problema general"): generar ticket con **ID 10** en el sistema y a su vez **derivar a un humano**. Es importante que esté en el sistema aunque se derive, para que los agentes estén al tanto del problema general.
-*   Información para cambiar la contraseña del router.
+*   Información para cambiar la contraseña del router. Se indican los pasos a seguir.
 *   Reportar problemas de zona (servicio lento o sin servicio): incluir tipo de conexión (fibra o antena), fotos y videos. Se asigna a Soporte.
 *   Solicitar contacto con personal técnico: se pide detalle del caso y se asigna a Soporte.
 *   Solicitar mudanza: se recaban datos y se deriva a Soporte.
-*   **NO ejecutar test de velocidad con herramientas disponibles**. La razón es que las mediciones del cliente suelen ser incorrectas si no se hacen bajo condiciones específicas (vía cable UTP, sin otros equipos conectados, sin consumo de ancho de banda en el equipo de medición). Por tanto, no se considera algo que amerite una urgencia basado en mediciones de speedtest.
+*   **NO ejecutar test de velocidad con herramientas disponibles**. La razón es que las mediciones del cliente suelen ser incorrectas si no se hacen bajo condiciones específicas (vía cable UTP, sin otros equipos conectados, sin consumo de ancho de banda en el equipo de medición). Por tanto, no se considera algo que amerite una urgencia basado en mediciones de speedtest. 
 *   Solicitar visita técnica: se solicita información, se genera ticket y se deriva a Soporte.
 
 ## Autogestión para no clientes
@@ -67,3 +65,8 @@ El bot debe poder asignar conversaciones a los siguientes departamentos:
 *   Informar sobre los tipos de servicio, velocidades y características (Fibra óptica, Antena wireless).
 *   **Para la contratación de instalación**: si el cliente tiene dudas, que derive a Ventas. Si no tiene dudas, que haga el ticket de instalación automáticamente.
 *   **Nuevos requerimientos:** Determinar si hay **cobertura** en la ubicación geográfica del cliente (compartida por Google Maps) utilizando archivos KML o KMZ.
+
+# Requerimientos que no pueden ser atendidos.
+
+*   Si pasan **4 horas sin respuesta de un agente humano** después de una derivación, **reiterar la derivación 1 vez** (para que suba arriba del chat). Esto por plataforma lo debe hacer un agente o colaborador
+*   Si pasan **más de 24 horas sin respuesta a la segunda derivación**, **archivar el chat** para que el cliente pueda volver a hablar con el bot. Esto por plataforma lo debe hacer un agente o colaborador.
