@@ -70,7 +70,7 @@ Este documento contiene la información esencial que el chatbot debe conocer par
 ## 6. 🏢 Dirección de la Empresa
 
 - **García Merou 127, Resistencia, Chaco**
-- [Geo Conexiones - Google Maps](https://www.geointernetchacho.com/)
+- [Geo Conexiones - Google Maps](https://maps.app.goo.gl/DxYMt441f79kz8s5A)
 
 ## 7. 💸 Promociones y Referidos
 
@@ -165,12 +165,7 @@ El bot debe derivar a humano cuando:
 - **Cambio de plan:** Validar ubicación y ofrecer opciones disponibles.
 - **Soporte técnico sin costo:** Excepto daños causados por manipulación incorrecta.
 
-## 18. 🛠️ Notas Técnicas
-
-- **Fórmula de Haversine:** Para calcular distancia entre dos puntos geográficos.
-- **Link útil:** [¿Cómo calcular la distancia entre dos puntos geográficos?](https://example.com/haversine)
-
-## 19. 📬 Ejemplo de Resumen Final
+## 18. 📬 Ejemplo de Resumen Final
 
 Los datos que guardamos para su instalación son:
 Nombre completo: [nombre]
@@ -178,4 +173,6 @@ DNI: [DNI]
 Teléfono: [teléfono]
 Dirección: [dirección]
 
-// TODO: IA recomienda: 200, 20 los chunks
+## 19. Dias Feriados 2025
+
+// TODO: Cálculo de chunks: 200 size, 20 overlap
