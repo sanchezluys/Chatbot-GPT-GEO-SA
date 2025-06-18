@@ -174,3 +174,30 @@ Teléfono: [teléfono]
 Dirección: [dirección]
 
 ## Dias Feriados 2025
+
+## Cambio de titularidad
+
+Debe venir a la empresa en *García Merou 127* 🏢 junto con la persona que va a ser el nuevo titular.
+
+*Se solicita:*
+✔ Fotocopia de DNI 🆔
+
+Luego de cumplir estos requisitos, se le hará firmar un contrato al titular nuevo ✍️📑 y con ello finalizará este trámite.
+
+## Datos para abonar, datos bancarios
+
+Estos son los datos Bancarios 🏦 donde puedes abonar el servicio de forma electrónica: 📌 
+
+✔ *CBU*: {{api_cbu}}
+✔ *ALIAS*: {{api_alias}}
+✔ *CPE*: {{api_cpe}}
+
+Si aún no tienes los datos para abonar, puedes elegir la opción de "*Hablar con el personal administrativo*". 🙋‍♂️
+
+## Resumen de la cuenta
+
+✨  ¡Buenas noticias! Ahora podés acceder al resumen completo de tu cuenta de forma fácil y rápida. Consulta tu saldo, gestiona tus servicios y productos, y realiza pagos online, todo en un solo lugar diseñado para tu comodidad. 🧾
+
+*Accede al detalle completo de tu cuenta a través del siguiente enlace:* {{api_link_portal}}
+
+¡Gracias por tu confianza! 😊
