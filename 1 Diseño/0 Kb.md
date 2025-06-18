@@ -7,7 +7,7 @@ Este documento contiene la información esencial que el chatbot debe conocer par
 ### Planes por Antena
 
 | Velocidad | Uso recomendado                   | Dispositivos soportados |
-|-          |--                                 | ---                     |
+| --------- | --------------------------------- | ----------------------- |
 | 7 Mbps    | Redes sociales, navegación básica | Hasta 2 dispositivos    |
 | 10 Mbps   | Streaming HD, videollamadas       | Hasta 3 dispositivos    |
 | 12 Mbps   | Streaming HD estable              | Hasta 4 dispositivos    |
@@ -15,7 +15,7 @@ Este documento contiene la información esencial que el chatbot debe conocer par
 ### Planes por Fibra Óptica
 
 | Velocidad | Uso recomendado                                      | Dispositivos soportados |
-|-          |--                                                    |--                       |
+| --------- | ---------------------------------------------------- | ----------------------- |
 | 60 Mbps   | Hogares con varios usuarios, Full HD                 | Hasta 8 dispositivos    |
 | 100 Mbps  | Streaming 4K, gaming en línea                        | Hasta 10 dispositivos   |
 | 300 Mbps  | Teletrabajo intensivo, múltiples pantallas 4K        | Hasta 15 dispositivos   |
@@ -42,14 +42,14 @@ Este documento contiene la información esencial que el chatbot debe conocer par
 ### Fibra Óptica
 
 | Planes             | ID  | Cuotas posibles       |
-|-                   |--   |---                    |
+| ------------------ | --- | --------------------- |
 | 60, 100 y 300 Mbps | 20  | 2 cuotas (4% interés) |
 | 600 Mbps           | 23  | 2 o 3 cuotas (8%)     |
 
 ### Antena
 
 | Planes           | ID  | Cuotas posibles        |
-| -                |--   |---                     |
+| ---------------- | --- | ---------------------- |
 | Todos los planes | 16  | Hasta 2 cuotas (1/15%) |
 
 > ⚠️ No mencionar porcentajes de interés al cliente. Solo mostrar precios finales calculados.
@@ -62,7 +62,7 @@ Este documento contiene la información esencial que el chatbot debe conocer par
 ## 5. 🕒 Horario de Atención
 
 | Días                | Horario                       |
-| -                   | --                            |
+| ------------------- | ----------------------------- |
 | Lunes a Viernes     | 08:00 – 13:00 / 16:00 – 20:00 |
 | Sábados             | 08:00 – 13:00                 |
 | Domingos y Feriados | 08:00 – 13:00 / 15:00 – 18:00 |
@@ -80,7 +80,7 @@ Este documento contiene la información esencial que el chatbot debe conocer par
 ## 8. 🧰 Equipos y Actualizaciones
 
 | Equipo               | ID  | Descripción                  |
-| -                    |--   | ---                          |
+| -------------------- | --- | ---------------------------- |
 | ONU Simple           | 6   | Precio de reemplazo          |
 | Router AC2/N4        | 3   | Precio de reemplazo          |
 | Router N2            | 1   | Precio de reemplazo          |
@@ -102,7 +102,7 @@ Este documento contiene la información esencial que el chatbot debe conocer par
 ## 11. 📁 IDs y Códigos Relevantes
 
 | Concepto                          | ID  |
-| -                                 |--   |
+| --------------------------------- | --- |
 | Instalación Fibra 60/100/300 Mbps | 20  |
 | Instalación Fibra 600 Mbps        | 23  |
 | Instalación Antena                | 16  |
@@ -115,7 +115,7 @@ Este documento contiene la información esencial que el chatbot debe conocer par
 ## 12. 🎯 Categorías de Tickets en IspBrain
 
 | Categoría                | Código |
-| -                        |--      |
+| ------------------------ | ------ |
 | Estado de ticket abierto | 1      |
 | Instalación Fibra Óptica | 2      |
 | Instalación Antena       | 12     |
@@ -173,6 +173,4 @@ DNI: [DNI]
 Teléfono: [teléfono]
 Dirección: [dirección]
 
-## 19. Dias Feriados 2025
-
-// TODO: Cálculo de chunks: 200 size, 20 overlap
+## Dias Feriados 2025

@@ -1,5 +1,3 @@
-# Etiquetas
-
 - Si {{system.customer_says}} desea notificar, informar o información para informar pago entonces asigna la etiqueta 'informar_pago'
 - Si {{system.customer_says}} si no tiene relacion con el servicio, la contratación o fallas entonces asigna la etiqueta 'otras_consultas'
 - Si {{system.customer_says}} notifica, solicita o pregunta por otros planes aparte del que tiene actualmente entonces asigna la etiqueta 'modificar_plan'
