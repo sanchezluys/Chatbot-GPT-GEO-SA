@@ -55,6 +55,26 @@ Cerrar consultando si desea ayuda en algo mas, si contesta que no entonces 'arch
 - Para validar un cliente se puede validar con DNI, CUIL, CUIT o Telefono.
 - Se usa la la herramienta 'validar_por_dni' o 'validar_por_telefono'
 
+### Informar el pago
+
+- Indicar al cliente que para informar un pago es necesario que primero valide su cuenta. para luego gestionar el pago con el departamento de administración.
+- validar al cliente
+- usar la herramienta 'informar_pago'
+
+### Cambio de titularidad
+
+- Usar las kb para responder, esta en la sección de KB 'cambio de titularidad'
+
+### Reconexión de servicio
+
+- validar al cliente
+- usar la herramienta 'reconexion_servicio'
+
+### Solicitar baja de servicio
+
+- validar al cliente
+- usar la herramienta 'solicitar_baja_servicio'
+
 ### SOLICITAR FACTURA
 
 - validar al cliente

@@ -159,7 +159,7 @@ El bot debe derivar a humano cuando:
 - Guiar al cliente con imágenes
 - Abrir ticket si persiste el problema
 
-## 17. 🧱 Casos Especiales
+## 17. 🧱 Costos por Casos Especiales
 
 - **Clientes antiguos que quieren volver:** Aplica reconexión + proporcional del mes.
 - **Cambio de plan:** Validar ubicación y ofrecer opciones disponibles.

@@ -1,0 +1,24 @@
+# Listado de preguntas de test
+
+Preguntas para validar el comportamiento del bot:
+
+| Id | Pregunta / Intención      | Valida / Lógica Responsable                                                 | Estatus |
+| -- | -------------------------- | ---------------------------------------------------------------------------- | ------- |
+| 1  | acceso al portal           | iteracción:  validar por dni o telefono                                     | OK      |
+| 2  | consultar saldo            | iteracción: validar por dni o telefono                                      | OK      |
+| 3  | consultar plan actual      | iteracción: mi_plan                                                         | OK      |
+| 4  | informar pago              | iteracción: informar_pago                                                   | OK      |
+| 5  | cambio de titularidad      | kb: cambio de titularidad                                                    | OK      |
+| 6  | Reconexión                | No hay info                                                                  |         |
+| 7  | Solicitar baja de servicio | iteracción: solicitar_baja                                                  |         |
+| 8  | Proceso de contratación   | 1. informa y pasa a ventas<br />2. genera ticket de instalacion en isp brain |         |
+|    |                            |                                                                              |         |
+|    |                            |                                                                              |         |
+|    |                            |                                                                              |         |
+|    |                            |                                                                              |         |
+|    |                            |                                                                              |         |
+|    |                            |                                                                              |         |
+|    |                            |                                                                              |         |
+|    |                            |                                                                              |         |
+|    |                            |                                                                              |         |
+|    |                            |                                                                              |         |
