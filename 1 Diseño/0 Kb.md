@@ -2,7 +2,7 @@
 
 Este documento contiene la información esencial que el chatbot debe conocer para responder consultas relacionadas con servicios, precios, ubicaciones, horarios y promociones de Geo S.A.
 
-## 1. 📡 Planes de Internet
+## 1. 📡 Planes y servicios de Internet
 
 ### Planes por Antena
 
@@ -183,6 +183,16 @@ Debe venir a la empresa en *García Merou 127* 🏢 junto con la persona que va 
 ✔ Fotocopia de DNI 🆔
 
 Luego de cumplir estos requisitos, se le hará firmar un contrato al titular nuevo ✍️📑 y con ello finalizará este trámite.
+
+## Mapas y Zonas de cobertura
+
+Nota: esta información es general y puede no reflejar la cobertura exacta en todas las áreas. Para consultas específicas, recomendamos contactar a un agente de ventas.
+
+Zona 1:
+![Mapa de cobertura](https://static.wixstatic.com/media/b30165_0b1c3d6f2e4a4b8c9d5f7c8e2f3b4c5d~mv2.png)
+
+Zona 2:
+![Mapa de cobertura](https://static.wixstatic.com/media/b30165_1a
 
 ## Datos para abonar, datos bancarios
 

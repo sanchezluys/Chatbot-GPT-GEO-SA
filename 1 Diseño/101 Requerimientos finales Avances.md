@@ -94,17 +94,17 @@
 
 ## Autogestión para No Clientes
 
-    Información de Servicios:
+    ~~Información de Servicios:~~
 
-    Planes disponibles, tipos de servicio (Fibra, Antena, Rural) desde base de conocimiento.
+    ~~Planes disponibles, tipos de servicio (Fibra, Antena, Rural) desde base de conocimiento.~~
 
-    Consulta de Cobertura:
+    ~~Consulta de Cobertura:~~
 
-    Al consultar por cobertura, solicitar dirección/ubicación.
+    ~~Al consultar por cobertura, solicitar dirección/ubicación.~~
 
-    Informar que un agente de Ventas confirmará la disponibilidad y derivar la consulta.
+ ~~Informar que un agente de Ventas confirmará la disponibilidad y derivar la consulta.~~
 
-    Opcional: Mostrar mapas de cobertura generales por zona (imágenes provistas por GEO SA en base de conocimiento), aclarando su carácter general.
+ ~~Opcional: Mostrar mapas de cobertura generales por zona (imágenes provistas por GEO SA en base de conocimiento), aclarando su carácter general.~~
 
     ~~(NOTA: La funcionalidad de verificación automática de cobertura geográfica mediante cálculo de geolocalización (Haversine) no se implementará en esta versión. Las pruebas con el bot "Ubicabot" no fueron exitosas, y se requeriría un desarrollo de microservicio dedicado, lo cual resultaría en altos costos de tokens con GPT-4o para un procesamiento directo por el LLM).~~
 
