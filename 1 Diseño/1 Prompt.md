@@ -128,7 +128,11 @@ Ejecutar paso a paso en estricto orden sin saltar ningún paso para realizar la 
 
 ### Agregar domicilio
 
+Ejecutar paso a paso en estricto orden sin saltar ningún paso para realizar la solicitud del AGREGAR INFORMACION DE NUEVO DOMICILIO que esta sujeta a revisión por el departamento de administración:
+
 - validar al cliente con las ia tools: 'validar_por_dni' o 'validar_por_telefono'
+- informar al cliente sus direcciones registradas.
+- solicitar el nuevo domicilio.
 - usar la ia tools: 'agregar_domicilio'
 
 ### Cambio de ancho de banda

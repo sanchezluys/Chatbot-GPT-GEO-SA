@@ -20,5 +20,5 @@ Preguntas para validar el comportamiento del bot:
 |    | datos de la empresa, direccion, ubicacion, horarios | KB:                                                                                                                       | OK                       |
 |    | solicitar factura                                   | IAT: 'solicitar_factura', 'consultar_factura'                                                                             | OK                       |
 |    | cambio de plan                                      | IAT: 'cambio_plan'                                                                                                        | OK                       |
-|    |                                                     |                                                                                                                           |                          |
+|    | agregar domicilio                                   | IAT: 'agregar_domicilio'                                                                                                  | OK                       |
 |    |                                                     |                                                                                                                           |                          |
