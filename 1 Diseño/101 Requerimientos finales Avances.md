@@ -70,11 +70,11 @@
 
     ~~Informar Pago: Recibir imagen y detalles, derivar a Administración.~~
 
-    Solicitar Facturas:
+    ~~Solicitar Facturas:~~
 
-    Clientes con factura A, B o C: Indicar que las vean en el portal. Derivar si hay problemas.
+ ~~Clientes con factura A, B o C: Indicar que las vean en el portal. Derivar si hay problemas.~~
 
-    Otros casos: Derivar a Administración.
+ ~~Otros casos: Derivar a Administración.~~
 
     Informar Medios de Pago: Detallar opciones (ventanilla, portal). Guiar al portal a clientes con factura A, B o C para pagos (sin mencionar explícitamente la condición).
 
