@@ -18,7 +18,7 @@ Preguntas para validar el comportamiento del bot:
 | 12 | ver mi tipo de factura abc                          | IAT: con 'buscar_facturas_abc'                                                                                            | OK                       |
 |    | generar ticket de mudanza                           | IAT: crear_ticket                                                                                                         | OK                       |
 |    | datos de la empresa, direccion, ubicacion, horarios | KB:                                                                                                                       | OK                       |
-|    |                                                     |                                                                                                                           |                          |
+|    | solicitar factura                                   | IAT: 'solicitar_factura', 'consultar_factura'                                                                             | OK                       |
 |    |                                                     |                                                                                                                           |                          |
 |    |                                                     |                                                                                                                           |                          |
 |    |                                                     |                                                                                                                           |                          |

@@ -73,9 +73,10 @@ Intenta resolver la consulta usando las bases de conocimiento, las IA Tools o lo
 
 ### SOLICITAR FACTURA
 
-- Validar al cliente.
-- Pedir el período requerido.
-- Usar la herramienta `consultar_factura`.
+- Validar al cliente usando la herramienta 'validar_por_dni' o 'validar_por_telefono'
+- Ejecutar la herramienta 'buscar_facturas_abc'
+  - Si {{tipo_factura}} es 'Tipo A' || 'Tipo B' || 'Tipo C' entonces usar ejecutar la sección: "DATOS PARA ACCEDER AL PORTAL"
+  - Si {{tipo_factura}} es 'Sin Facturas A,B,C' entonces solicitar el periodo de las facturas, luego ejecutar la IA Tools 'consultar_facturas' 
 
 ### PLANES Y SERVICIOS
 
