@@ -146,6 +146,8 @@ Ejecutar paso a paso en estricto orden sin saltar ningún paso para realizar la 
 
 ### Solicitud de reconexión
 
+Ejecutar paso a paso en estricto orden sin saltar ningún paso para realizar la solicitud de RECONEXION que esta sujeta a revisión por el departamento de administración:
+
 - Solicitar los datos Nombre Completo y DNI, CUIL, CUIT
 - usar la ia tools: 'solicita_reconexion'
 

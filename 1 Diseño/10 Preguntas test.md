@@ -22,4 +22,4 @@ Preguntas para validar el comportamiento del bot:
 |    | cambio de plan                                      | IAT: 'cambio_plan'                                                                                                        | OK                       |
 |    | agregar domicilio                                   | IAT: 'agregar_domicilio'                                                                                                  | OK                       |
 |    | cambio de ancho de banda                            | IAT: 'cambio_ancho_banda'                                                                                                 | OK                       |
-|    |                                                     |                                                                                                                           |                          |
+|    | solicitud de reconexion                             | IAT + kb: 'solicitud_reconexion'                                                                                          | OK                       |
