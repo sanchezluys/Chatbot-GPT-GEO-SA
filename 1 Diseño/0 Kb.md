@@ -173,7 +173,17 @@ DNI: [DNI]
 Teléfono: [teléfono]
 Dirección: [dirección]
 
-## Dias Feriados 2025
+## Politicas del servicio
+
+🔹 *Instalación y Pago:* Para solicitar cualquier servicio de *Geo S.A.*, la instalación puede abonarse de dos maneras:
+1. Pago único 💰 Sera abonado al instalador al momento de que le instala nuestro servicio. 
+2. En cuotas 📅 Si elige pagar en cuotas, la primera cuota le abonara al instalador en el momento de la instalación. Las siguientes cuotas se abonarán junto con el plan elegido el mes siguiente, del 1 al 10 de cada mes.
+
+🔹 *Coordinación con el Instalador:* Cuando le asignen un instalador, él se pondrá en contacto con usted para coordinar el día de la visita. Para ello, le pedimos que tenga listos los siguientes documentos:
+• Fotocopia de su DNI 🆔 
+• Fotocopia del pago de servicio o recibo de sueldo a su nombre 📄
+
+🔸 *Equipos en Comodato:* Todos los equipos entregados quedan en comodato 📦. Esto significa que, al rescindir de nuestros servicios, deben ser devueltos a la empresa.
 
 ## Cambio de titularidad
 
@@ -211,3 +221,27 @@ Si aún no tienes los datos para abonar, puedes elegir la opción de "*Hablar co
 *Accede al detalle completo de tu cuenta a través del siguiente enlace:* {{api_link_portal}}
 
 ¡Gracias por tu confianza! 😊
+
+## Dias Feriados 2025
+
+| Fecha      | Tipo        | Nombre                                                    |
+| ---------- | ----------- | --------------------------------------------------------- |
+| 2025-01-01 | inamovible  | Año nuevo                                                 |
+| 2025-03-03 | inamovible  | Carnaval                                                  |
+| 2025-03-04 | inamovible  | Carnaval                                                  |
+| 2025-03-24 | inamovible  | Día Nacional de la Memoria por la Verdad y la Justicia    |
+| 2025-04-02 | inamovible  | Día del Veterano y de los Caídos en la Guerra de Malvinas |
+| 2025-04-18 | inamovible  | Viernes Santo                                             |
+| 2025-05-01 | inamovible  | Día del Trabajador                                        |
+| 2025-05-02 | puente      | Puente turístico no laborable                             |
+| 2025-05-25 | inamovible  | Día de la Revolución de Mayo                              |
+| 2025-06-16 | trasladable | Paso a la Inmortalidad del General Martín Güemes          |
+| 2025-06-20 | inamovible  | Paso a la Inmortalidad del General Manuel Belgrano        |
+| 2025-07-09 | inamovible  | Día de la Independencia                                   |
+| 2025-08-15 | puente      | Puente turístico no laborable                             |
+| 2025-08-17 | trasladable | Paso a la Inmortalidad del Gral. José de San Martín       |
+| 2025-10-12 | trasladable | Día del Respeto a la Diversidad Cultural                  |
+| 2025-11-21 | puente      | Puente turístico no laborable                             |
+| 2025-11-24 | trasladable | Día de la Soberanía Nacional                              |
+| 2025-12-08 | inamovible  | Día de la Inmaculada Concepción de María                  |
+| 2025-12-25 | inamovible  | Navidad                                                   |

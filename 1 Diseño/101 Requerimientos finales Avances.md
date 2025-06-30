@@ -88,7 +88,7 @@
 
 ## Información General (No requiere autenticación)
 
-    Proveer datos de la empresa (dirección, horarios, Google Maps) desde base de conocimiento.
+    ~~Proveer datos de la empresa (dirección, horarios, Google Maps) desde base de conocimiento~~.
 
     Consultas generales no cubiertas: Recabar DNI (opcional) y detalle, derivar a Administración.
 
@@ -108,13 +108,13 @@
 
     ~~(NOTA: La funcionalidad de verificación automática de cobertura geográfica mediante cálculo de geolocalización (Haversine) no se implementará en esta versión. Las pruebas con el bot "Ubicabot" no fueron exitosas, y se requeriría un desarrollo de microservicio dedicado, lo cual resultaría en altos costos de tokens con GPT-4o para un procesamiento directo por el LLM).~~
 
-    Proceso de Contratación:
+    ~~Proceso de Contratación:~~
 
-    Solicitar datos: DNI, recibo de sueldo, ubicación (para referencia del agente), forma de pago.
+ ~~Solicitar datos: DNI, recibo de sueldo, ubicación (para referencia del agente), forma de pago.~~
 
-    Derivar a Ventas si hay dudas.
+ ~~Derivar a Ventas si hay dudas.~~
 
-    Si se completan datos, generar ticket de instalación.
+ ~~Si se completan datos, generar ticket de instalación.~~
 
 ## ~~Plataforma y Tecnologías~~
 
@@ -124,7 +124,7 @@
 
  ~~Integraciones Backend: API de ISP Brain (endpoints para clientes, facturación, etc.), sistema de ticketing de GEO SA.~~
 
-    Base de Conocimiento del Bot: Archivos .json (feriados), imágenes (mapas de cobertura, asistencia), texto (info de empresa, router, etc.).
+    ~~Base de Conocimiento del Bot: Archivos .json (feriados)~~, imágenes (mapas de cobertura, asistencia), texto (info de empresa, router, etc.).
 
 ## Puntos Clave para GEO SA
 
