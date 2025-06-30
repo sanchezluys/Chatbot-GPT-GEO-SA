@@ -21,4 +21,5 @@ Preguntas para validar el comportamiento del bot:
 |    | solicitar factura                                   | IAT: 'solicitar_factura', 'consultar_factura'                                                                             | OK                       |
 |    | cambio de plan                                      | IAT: 'cambio_plan'                                                                                                        | OK                       |
 |    | agregar domicilio                                   | IAT: 'agregar_domicilio'                                                                                                  | OK                       |
+|    | cambio de ancho de banda                            | IAT: 'cambio_ancho_banda'                                                                                                 | OK                       |
 |    |                                                     |                                                                                                                           |                          |

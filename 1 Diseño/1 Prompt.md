@@ -137,7 +137,11 @@ Ejecutar paso a paso en estricto orden sin saltar ningún paso para realizar la 
 
 ### Cambio de ancho de banda
 
+Ejecutar paso a paso en estricto orden sin saltar ningún paso para realizar la solicitud del CAMBIO DE ANCHO DE BANDA que esta sujeta a revisión por el departamento de administración:
+
 - validar al cliente con las ia tools: 'validar_por_dni' o 'validar_por_telefono'
+- ejecutar la ia tools 'mi_plan' para saber cual es el ancho de banda del plan actual del cliente
+- Preguntar al cliente cual nuevo ancho de banda desea, usa las kb para indicar los anchos de banda disponibles en la sección kb: "Planes y servicios de Internet"
 - usar la ia tools: 'cambio_ancho_banda'
 
 ### Solicitud de reconexión
