@@ -32,9 +32,9 @@
 
     Horario Laboral: Informar si la consulta es fuera de horario y dejar la conversación abierta para atención en la siguiente jornada.
 
-    Días Feriados:
+    ~~Días Feriados:~~
 
-    Consultar archivo .json de feriados nacionales inamovibles (provisto anualmente por GEO SA, basado en fuente argentinadatos.com).
+ ~~Consultar archivo .json de feriados nacionales inamovibles (provisto anualmente por GEO SA, basado en fuente argentinadatos.com).~~
 
     Si es feriado, informar posible demora en la respuesta y proceder con la derivación.
 
@@ -78,9 +78,9 @@
 
     Informar Medios de Pago: Detallar opciones (ventanilla, portal). Guiar al portal a clientes con factura A, B o C para pagos (sin mencionar explícitamente la condición).
 
-    Modificaciones de Servicio (Derivación a Administración):
+    ~~Modificaciones de Servicio (Derivación a Administración):~~
 
-    Cambio de plan, titularidad (informar proceso), agregar domicilio, cambio de ancho de banda, solicitud de reconexión.
+ ~~Cambio de plan, titularidad (informar proceso), agregar domicilio, cambio de ancho de banda, solicitud de reconexión~~.
 
     Soporte Técnico (Generación de Tickets y/o Derivación a Soporte):
 
