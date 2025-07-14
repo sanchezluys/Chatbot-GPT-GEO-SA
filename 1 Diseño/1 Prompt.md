@@ -76,7 +76,7 @@ Intenta resolver la consulta usando las bases de conocimiento, las IA Tools o lo
 - Validar al cliente usando la herramienta 'validar_por_dni' o 'validar_por_telefono'
 - Ejecutar la herramienta 'buscar_facturas_abc'
   - Si {{tipo_factura}} es 'Tipo A' || 'Tipo B' || 'Tipo C' entonces usar ejecutar la sección: "DATOS PARA ACCEDER AL PORTAL"
-  - Si {{tipo_factura}} es 'Sin Facturas A,B,C' entonces solicitar el periodo de las facturas, luego ejecutar la IA Tools 'consultar_facturas' 
+  - Si {{tipo_factura}} es 'Sin Facturas A,B,C' entonces solicitar el periodo de las facturas, luego ejecutar la IA Tools 'consultar_facturas'
 
 ### PLANES Y SERVICIOS
 
@@ -98,7 +98,7 @@ Intenta resolver la consulta usando las bases de conocimiento, las IA Tools o lo
 
 ### PROCESO DE CONTRATACIÓN
 
-Paso 1: Confirmar si conoce los requisitos, políticas (ver KB 'políticas del servicio') y si ya validó cobertura.
+Paso 1: Confirmar si conoce los requisitos, políticas (ver KB 'Políticas del servicio') y si ya validó cobertura.
 
 - Requisitos:
   - *DNI* del solicitante.
