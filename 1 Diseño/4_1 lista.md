@@ -1,0 +1,40 @@
+- agregar_domicilio   -   se usa para gestionar la solicitud de agregar un domicilio. el cliente debe estar validado primero
+- altwha_accounts   -   Se obtiene la lista completa de cuentas no eliminados.
+- archivar_conversacion   -   se usa para archivar y cerrar una conversación
+- areas_activas   -   Se obtiene la lista completa de ciudades no eliminadas.
+- buscar_facturas_abc   -   herramienta para verificar que tipo de facturas tiene, opciones son tipo A, Tipo B, Tipo C y Tipo Sin Facturas ABC. el cliente debe estar validado
+- cambio_ancho_banda   -   se usa para gestionar la solicitud de cambio de ancho de banda. el cliente debe estar validado primero
+- cambio_plan   -   se usa para gestionar la solicitud de cambio de plan de un cliente, esta sujeta a decisión del departamento de administración
+- ciudades_activas   -   Se obtiene la lista completa de ciudades no eliminadas.
+- consultar_cobertura   -   Se usa para gestionar la confirmación de cobertura en la direccion del cliente con ayuda de un asesor de ventas.
+- consultar_factura   -   se usa para consultar las facturas de un cliente, el cliente debe estar primero validado.
+- consultar_tickets   -   se usa para consultar los tickets activos actualmente, el cliente debe estar validado.
+- crear_ticket   -   se usa para generar un ticket por las siguientes razones, el cliente siempre debe estar validado - mudanza
+- enviar_otp_correo   -   se usa para enviar codigo otp al correo registrado en sistema. el cliente debe estar validado. en ningun momento el codigo debe ser informado al cliente.
+- generar_otp   -   genera un numero aleatorio otp, de 4 digitos, entero positivo, no puede ser nulo.
+- generar_ticket_instalacion   -   se usa para generar el ticket de instalación al equipo de soporte, el cliente debe tener ya toda la información clara antes de proceder.
+- informar_pago   -   se usa para gestionar la notificación o información de un pago, el cliente debe estar validado.
+- lista_compromisos_de_pago   -   se usa para obtener la Lista de compromisos de pago
+- lista_de_cuit   -   se usa para Obtener lista de Cuit de facturación
+- lista_dispositvos_empresa   -   Se obtiene la lista completa de Dispositivos no eliminados de la empresa
+- lista_sucursales   -   Se obtiene la lista completa de sucursales
+- mi_plan   -   herramienta que se usa para conocer el plan actual del cliente. primero el cliente debe estar validado
+- mis_comprobantes   -   herramienta que se usa para informar los comprobantes del cliente. el cliente debe estar primero validado.
+- mis_conexiones   -   se usa para obtener lista de conexiones de un cliente. el cliente debe estar validado
+- planes_en_sistema   -   se usa para obtener la lista completa de planes en sistema isp brain
+- puntos_conexion   -   se usa para Obtener lista de puntos de conexión
+- resumen_comprobantes   -   se usa para buscar el resumen total de recibos de un cliente. el cliente debe estar validado
+- resumen_mis_conexiones   -   se usa para obtener en resumen la cantidad de conexiones y suma de precios de planes. el cliente debe estar validado
+- seleccionar_departamento   -   # Se usa para seleccionar el departamento que depende de la intención del cliente. - Es necesario hacer las preguntas para entender la intención del cliente y el departamento adecuado que lo puede atender. Los departamentos disponibles y los casos que puede atender son: 1. administracion: consultas generales, consultas sin relacion con geo sa, informar pagos, consultas que no están claras, tramites, cambio de titularidad, reconexión, solicitar baja 2. atención al cliente 3. ventas 4. soporte técnico ## Casos no validos como intenciones: - quiero hablar con un asesor : no es una intención clara - para hablar con ellos : no es una intención clara ## Departamento por defecto - Administración Aplica cuando no se tiene clara la intención o la consulta no tiene relación con los servicios de GEO SA
+- servicios_en_sistema   -   Se obtiene la lista completa de servicios en sistema
+- solicita_reconexion   -   se usa para gestionar la solicitud de reconexión
+- solicitar_facturas   -   se usa para informar al cliente como visualizar sus facturas. el cliente debe estar validado y tambien se debe ejecutar primero la ia tools 'buscar_facturas_abc'
+- solicitud_de_baja   -   herramienta que se usa para gestionar la solicitud de baja. el cliente primero debe estar validado
+- transferir_a_administracion   -   # Se usa para gestionar la transferencia de la conversación al departamento de administracion. - Es el canal por defecto de atención en especial a los CLIENTES NO VALIDADOS. - SIEMPRE SE DEBE PEDIR EL NOMBRE COMPLETO Y EL MOTIVO DE LA CONSULTA. # Casos sin validación del cliente: - Consultas generales - Cuando no se tenga clara la intención - Cuando el cliente este confundido y no sepa que departamento lo puede ayudar - Cuando no se sepa a que departamento se debe transferir - Cuando la consulta no está relacionada con servicios de internet - Solicitar Reconexión # Casos en los que se debe validar al cliente primero - Cambio de plan, - Agregar domicilio - cambio de ancho de banda
+- transferir_a_atencion   -   se usa para transferir al departamento de atención al cliente solo a CLIENTES VALIDADOS
+- transferir_a_soporte   -   # Se usa para transferir la conversación con el departamento de soporte - SOLO A CLIENTES VALIDADOS, con los siguientes casos: - Visita técnica - solicitud de baja - reportar avería - información para cambio de contraseña de router (info provista por GEO SA) - reportar problemas de zona (permitir adjuntar multimedia) - contacto con personal técnico - mudanza.
+- transferir_a_ventas   -   se usa para transferir al departamento de ventas a clientes NO VALIDADOS.
+- validar_horario   -   se usa para validar el horario de atención, disponibilidad de asesores humanos
+- validar_por_dni   -   se usa para validar en isp brain si el dni, cuil, cuit esta registrado en sistema con un cliente activo
+- validar_por_telefono   -   se usa para validar en isp brain si el telefono existe en sistema con un cliente activo. si el {{phone}} es nulo entonces preguntarlo
+- actualizar_datos_de_contacto   -   se usa para gestionar la solicitud de actualizacion de datos de contacto de un cliente
