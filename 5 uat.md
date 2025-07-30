@@ -1,7 +1,6 @@
-
 # ✅ ACTA DE VALIDACIÓN Y ENTREGA: ASISTENTE VIRTUAL GEO SA (v1.0)
 
-## 🧾 1. Datos del Proyecto
+## 1. Datos del Proyecto
 
 | Parámetro               | Valor                                           |
 | :---------------------- | :---------------------------------------------- |
@@ -13,112 +12,102 @@
 | **Desarrollado por**    | Asisteclick / Luis Sánchez                      |
 | **Revisado por**        | GEO SA / [Nombre del Responsable]               |
 
-## 🎯 2. Objetivo del Documento
+## 2. Objetivo del Documento
 
-Este documento tiene como objetivo validar que las funcionalidades del Asistente Virtual (en adelante, "el bot") se ajustan a los requerimientos definidos en el documento **"Requerimientos del Bot – GEO SA Rev 1.2"**. La aprobación de este UAT (User Acceptance Testing) certifica la correcta implementación y entrega de la versión 1.0 del bot.
+Este documento tiene como objetivo validar que las funcionalidades del Asistente Virtual se ajustan a los requerimientos definidos en el documento **"Requerimientos del Bot – GEO SA Rev 1.2"**. La aprobación de este UAT (User Acceptance Testing) certifica la correcta implementación y entrega de la versión 1.0 del bot.
 
-## 🔁 3. Leyenda de Estados para Pruebas
+## 3. Leyenda de Estados para Pruebas
 
-| Emoji | Estado          | Descripción                                                                         |
-| :---- | :-------------- | :---------------------------------------------------------------------------------- |
-| ✅     | **Correcto**    | La funcionalidad cumple 100% con lo esperado.                                       |
-| ⚠️     | **Parcial**     | La funcionalidad opera, pero con errores menores que no impiden el flujo principal. |
-| ❌     | **Falla**       | La funcionalidad no cumple lo esperado o presenta errores críticos.                 |
-| 🔕     | **Desactivada** | Funcionalidad desactivada intencionalmente en esta versión.                         |
-
----
-
-## 🧪 4. Casos de Prueba
-
-### **Sección A: Interacción y Experiencia de Usuario**
-
-| N°      | Funcionalidad                         | Pasos para Probar                                                            | Resultado Esperado                                                                                                                                | Resultado Obtenido | Validado |
-| :------ | :------------------------------------ | :--------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------- | :------- |
-| **A.1** | **Tono, Estilo y Bienvenida**         | 1. Iniciar una nueva conversación.                                           | El bot responde con un saludo profesional, se presenta como "GEO-Bot", utiliza emojis y negritas para resaltar información clave, y ofrece ayuda. |                    |          |
-| **A.2** | **Fallback (Consulta no reconocida)** | 1. Preguntar algo fuera de dominio (ej: "¿Cuál es la capital de Mongolia?"). | El bot responde amablemente que no tiene información sobre ese tema y que derivará la consulta a un asesor. Asigna la etiqueta `otras_consultas`. |                    |          |
-| **A.3** | **Pregunta de Cierre**                | 1. Completar un flujo exitoso (ej: consultar saldo).                         | Antes de finalizar, el bot pregunta "¿Hay algo más en lo que pueda ayudarte hoy, {{name}}? 😊".                                                    |                    |          |
-
-### **Sección B: Flujos para No Clientes (Sin Autenticación)**
-
-| N°      | Funcionalidad                      | Pasos para Probar                                          | Resultado Esperado                                                                                                                                                                 | Resultado Obtenido | Validado |
-| :------ | :--------------------------------- | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------- | :------- |
-| **B.1** | **Consulta de Planes y Servicios** | 1. Preguntar "¿Qué planes de internet tienen?".            | El bot muestra las tablas de planes de Fibra y Antena (extraídas de la KB) y ofrece derivar la consulta a `Ventas`.                                                                |                    |          |
-| **B.2** | **Consulta de Cobertura**          | 1. Preguntar "¿Tienen cobertura en [Dirección Ficticia]?". | 1. El bot solicita la dirección. 2. Muestra los mapas generales de la KB. 3. Aclara que un agente de `Ventas` debe confirmar. 4. Deriva la conversación a `Ventas`.                |                    |          |
-| **B.3** | **Proceso de Contratación**        | 1. Expresar la intención de contratar.                     | 1. El bot explica las "Políticas del servicio" y requisitos de la KB. 2. Solicita datos (nombre, DNI, etc.). 3. Genera un ticket de instalación (ID 2 o 12). 4. Deriva a `Ventas`. |                    |          |
-
-### **Sección C: Flujos para Clientes (Post-Autenticación)**
-
-| N°      | Funcionalidad                          | Pasos para Probar                                                   | Resultado Esperado                                                                                                                                                          | Resultado Obtenido | Validado |
-| :------ | :------------------------------------- | :------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------- | :------- |
-| **C.1** | **Validación Exitosa (DNI)**           | 1. Proporcionar un DNI de cliente válido cuando el bot lo solicite. | El bot confirma la identidad exitosamente y lo comunica al usuario antes de continuar.                                                                                      |                    |          |
-| **C.2** | **Validación Fallida (DNI)**           | 1. Proporcionar un DNI no registrado.                               | El bot informa amablemente que no pudo validar la identidad y no puede proceder con gestiones de cuenta.                                                                    |                    |          |
-| **C.3** | **Consulta de Saldo y Plan**           | 1. Siendo un cliente validado, preguntar "¿Cuál es mi saldo?".      | El bot utiliza las herramientas `mi_plan` y `resumen_comprobantes` para mostrar la información correcta.                                                                    |                    |          |
-| **C.4** | **Acceso al Portal de Clientes**       | 1. Siendo un cliente validado, pedir acceso al portal.              | El bot verifica si el cliente tiene factura A/B/C. Si es así, le da el link del portal. Si no, responde "Tus credenciales para el portal aún no se encuentran disponibles". |                    |          |
-| **C.5** | **Actualización de Datos de Contacto** | 1. Siendo un cliente validado, solicitar "Quiero cambiar mi email". | El bot inicia el flujo correcto utilizando la herramienta `actualizar_datos_de_contacto` y pidiendo la nueva información.                                                   |                    |          |
-
-### **Sección D: Lógica de Negocio y Derivaciones**
-
-| N°      | Funcionalidad                            | Pasos para Probar                                                                                                           | Resultado Esperado                                                                                                                                                              | Resultado Obtenido | Validado |
-| :------ | :--------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------- | :------- |
-| **D.1** | **Gestión de Horario No Laboral**        | 1. Realizar una consulta que requiera derivación (ej: "cambiar mi plan") fuera del horario de atención (ej: a las 23:00hs). | El bot informa correctamente que está fuera del horario laboral, asegura que la consulta fue registrada y que será atendida en la siguiente jornada. No cierra la conversación. |                    |          |
-| **D.2** | **Gestión de Días Feriados**             | 1. Realizar una consulta que requiera derivación durante un día feriado (según KB).                                         | El bot informa sobre el día feriado y la posible demora en la respuesta antes de proceder con la derivación.                                                                    |                    |          |
-| **D.3** | **Derivación y Ticket: Soporte Técnico** | 1. Siendo cliente validado, reportar "No tengo internet".                                                                   | 1. El bot ofrece una guía visual de la KB. 2. Genera un ticket de "Soporte técnico" (ID 1). 3. Deriva la conversación al departamento de `Soporte técnico`.                     |                    |          |
-| **D.4** | **Derivación y Ticket: Avería en Zona**  | 1. Siendo cliente validado, reportar "Hay un corte en el barrio".                                                           | 1. El bot genera un ticket de "Problema general" (ID 10). 2. Deriva la conversación inmediatamente a `Soporte técnico`.                                                         |                    |          |
-| **D.5** | **Derivación: Administración**           | 1. Siendo cliente validado, solicitar "Quiero cambiar de titular".                                                          | El bot explica el proceso exacto que figura en la KB y deriva correctamente a `Administración`.                                                                                 |                    |          |
-
-### **Sección E: Sistema de Etiquetado Inteligente**
-
-| N°      | Funcionalidad                       | Pasos para Probar                                             | Resultado Esperado                                                                             | Resultado Obtenido | Validado |
-| :------ | :---------------------------------- | :------------------------------------------------------------ | :--------------------------------------------------------------------------------------------- | :----------------- | :------- |
-| **E.1** | **Etiquetado `sin_servicio`**       | 1. Iniciar conversación con "se cortó internet".              | La conversación es etiquetada automáticamente con `sin_servicio` en la plataforma Asisteclick. |                    |          |
-| **E.2** | **Etiquetado `servicio_lento`**     | 1. Iniciar conversación con "mi conexión anda muy despacio".  | La conversación es etiquetada automáticamente con `servicio_lento`.                            |                    |          |
-| **E.3** | **Etiquetado `solicitud_de_baja`**  | 1. Iniciar conversación con "quiero dar de baja el servicio". | La conversación es etiquetada automáticamente con `solicitud_de_baja`.                         |                    |          |
-| **E.4** | **Etiquetado `contratar_servicio`** | 1. Iniciar conversación con "quiero saber los precios".       | La conversación es etiquetada automáticamente con `contratar_servicio`.                        |                    |          |
+| Emoji | Estado          | Descripción                                                               |
+| :---- | :-------------- | :------------------------------------------------------------------------ |
+| ✅     | **Correcto**    | La funcionalidad cumple 100% con lo esperado.                             |
+| ⚠️     | **Parcial**     | La funcionalidad opera, pero con errores menores que no impiden el flujo. |
+| ❌     | **Falla**       | La funcionalidad no cumple lo esperado o presenta errores críticos.       |
+| 🔕     | **Desactivada** | Funcionalidad desactivada intencionalmente en esta versión.               |
 
 ---
 
-## 🧩 5. Requerimientos Fuera de Alcance y para Futuras Versiones
+## 4. Casos de Prueba
 
-### **Leyenda de Estados para Requerimientos Futuros**
+### **Sección A: Funciones Generales y Lógica de Negocio**
 
-| Emoji | Estado                       | Descripción                                                          |
-| :---- | :--------------------------- | :------------------------------------------------------------------- |
-| ⚠️     | **Pendiente**                | El cambio fue recibido pero aún no ha sido evaluado.                 |
-| ⏳     | **En análisis**              | Se está revisando su viabilidad técnica o funcional.                 |
-| 🚫     | **No viable**                | No es posible implementarlo por restricciones técnicas o de negocio. |
-| 🔲     | **No priorizado**            | Se documenta pero no se desarrollará por el momento.                 |
-| 🟢     | **Aprobado para cotización** | Se acordó evaluar esfuerzo y costo para una próxima versión.         |
+| N°      | Funcionalidad                     | Pasos para Probar                                                                                       | Resultado Esperado                                                                                                                                                    | Resultado Obtenido | Validado |
+| :------ | :-------------------------------- | :------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------- | :------- |
+| **A.1** | **Gestión de Horario No Laboral** | 1. Realizar una consulta que requiera derivación (ej: "cambiar mi plan") fuera del horario de atención. | El bot informa que está fuera del horario laboral, asegura que la consulta fue registrada y que será atendida en la siguiente jornada. La conversación queda abierta. |                    |          |
+| **A.2** | **Gestión de Días Feriados**      | 1. Realizar una consulta que requiera derivación durante un día feriado (según KB/JSON).                | El bot informa sobre el día feriado y la posible demora en la respuesta antes de proceder con la derivación.                                                          |                    |          |
+| **A.3** | **Archivado por Resolución**      | 1. Completar un flujo que genera un ticket (ej: solicitar baja). 2. Agradecer y despedirse.             | El bot entiende que el flujo finalizó, se despide cordialmente y la conversación se archiva.                                                                          |                    |          |
+| **A.4** | **Fallback (Fuera de Dominio)**   | 1. Preguntar algo no relacionado al negocio (ej: "¿Cuál es la capital de Mongolia?").                   | El bot responde amablemente que su especialidad es sobre GEO SA y reenfoca la conversación, sin derivar.                                                              |                    |          |
 
-### **Listado de Requerimientos**
+### **Sección B: Autogestión para No Clientes**
 
-| N°   | Descripción del Requerimiento                                        | Solicitado por | Fecha          | Estado                         | Observaciones                                                                                          |
-| :--- | :------------------------------------------------------------------- | :------------- | :------------- | :----------------------------- | :----------------------------------------------------------------------------------------------------- |
-| 1    | Verificación automática de cobertura geográfica en tiempo real.      | GEO SA         | {{dd/mm/aaaa}} | 🚫 **No viable**                | Requiere un desarrollo de microservicio dedicado y resultaría en altos costos de tokens y complejidad. |
-| 2    | Integración con sistema de facturación para descarga directa de PDF. | GEO SA         | {{dd/mm/aaaa}} | 🟢 **Aprobado para cotización** | Se evaluará para la v2.0. Requiere desarrollo de API específica.                                       |
-| 3    | Agendamiento automático de visitas técnicas en calendario.           | GEO SA         | {{dd/mm/aaaa}} | ⏳ **En análisis**              | Se está revisando la compatibilidad de la API del sistema de calendarios interno.                      |
+| N°      | Funcionalidad                           | Pasos para Probar                                                                | Resultado Esperado                                                                                                                                                                                  | Resultado Obtenido | Validado |
+| :------ | :-------------------------------------- | :------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------- | :------- |
+| **B.1** | **Consulta de Planes y Servicios**      | 1. Preguntar "¿Qué planes de internet tienen?".                                  | El bot muestra la información de planes de la KB y ofrece derivar la consulta a `Ventas`.                                                                                                           |                    |          |
+| **B.2** | **Consulta de Cobertura**               | 1. Preguntar "¿Tienen cobertura en [Dirección]?".                                | El bot solicita la dirección, informa que un agente de `Ventas` confirmará la disponibilidad y deriva la consulta. Opcionalmente, puede mostrar mapas generales de la KB.                           |                    |          |
+| **B.3** | **Proceso de Contratación (con dudas)** | 1. Expresar intención de contratar. 2. En el proceso, manifestar una duda.       | El bot deriva la conversación al departamento de `Ventas` para que un agente resuelva la duda.                                                                                                      |                    |          |
+| **B.4** | **Proceso de Contratación (sin dudas)** | 1. Expresar intención de contratar. 2. Proporcionar todos los datos solicitados. | El bot genera un ticket de instalación, informa al usuario que un agente lo contactará y archiva la conversación si el cliente se despide. La conversación es etiquetada como `contratar_servicio`. |                    |          |
+
+### **Sección C: Autogestión para Clientes (Requiere Autenticación)**
+
+| N°      | Funcionalidad                            | Pasos para Probar                                                                      | Resultado Esperado                                                                                                                                                                      | Resultado Obtenido | Validado |
+| :------ | :--------------------------------------- | :------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------- | :------- |
+| **C.1** | **Autenticación Exitosa (DNI/Teléfono)** | 1. Proporcionar un DNI o teléfono de cliente válido cuando el bot lo solicite.         | El bot confirma la identidad exitosamente y lo comunica al usuario.                                                                                                                     |                    |          |
+| **C.2** | **Consulta de Plan y Saldo**             | 1. Siendo un cliente validado, preguntar "¿Cuál es mi saldo y qué plan tengo?".        | El bot consume las APIs correspondientes y muestra el plan/conexiones activas y el saldo pendiente.                                                                                     |                    |          |
+| **C.3** | **Acceso al Portal (Cliente A/B/C)**     | 1. Siendo un cliente validado con factura A, B o C, pedir "dame los datos del portal". | El bot provee las credenciales `api_usuario_portal` y `api_clave_portal` y el link al portal.                                                                                           |                    |          |
+| **C.4** | **Acceso al Portal (Cliente sin A/B/C)** | 1. Siendo un cliente validado sin factura A, B o C, pedir "dame los datos del portal". | El bot responde amablemente: "Tus credenciales para el portal aún no se encuentran disponibles", sin explicar el motivo.                                                                |                    |          |
+| **C.5** | **Actualización de Datos de Contacto**   | 1. Siendo un cliente validado, solicitar "Quiero cambiar mi email".                    | El bot inicia el flujo de actualización, solicita el nuevo dato y utiliza el endpoint de la API para realizar el cambio. La conversación es etiquetada como `actualizar_datos_cliente`. |                    |          |
+| **C.6** | **Informar Pago**                        | 1. Siendo cliente validado, decir "quiero informar un pago" y adjuntar una imagen.     | El bot recibe la imagen y detalles, etiqueta la conversación como `informar_pago` y la deriva a `Administración`.                                                                       |                    |          |
+| **C.7** | **Solicitar Cambio de Plan**             | 1. Siendo cliente validado, solicitar "quiero cambiar mi plan".                        | El bot muestra los planes disponibles de la KB, pregunta cuál desea el cliente, etiqueta como `modificar_plan` y deriva a `Administración`.                                             |                    |          |
+| **C.8** | **Solicitud de Baja**                    | 1. Siendo cliente validado, solicitar "quiero la baja del servicio".                   | El bot genera un ticket de soporte, etiqueta la conversación como `solicitud_de_baja` y la asigna a `Soporte técnico`.                                                                  |                    |          |
+
+### **Sección D: Soporte Técnico y Tickets**
+
+| N°      | Funcionalidad                   | Pasos para Probar                                                                      | Resultado Esperado                                                                                                                                                                           | Resultado Obtenido | Validado |
+| :------ | :------------------------------ | :------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------- | :------- |
+| **D.1** | **Reporte "Sin Servicio"**      | 1. Siendo cliente validado, reportar "No tengo internet".                              | El bot ofrece una guía visual de la KB. Si el problema persiste, genera un ticket de "Soporte técnico" (ID 1), etiqueta la conversación como `sin_servicio` y la deriva a `Soporte técnico`. |                    |          |
+| **D.2** | **Reporte "Servicio Lento"**    | 1. Siendo cliente validado, reportar "internet anda lento".                            | El bot genera un ticket de "Soporte técnico" (ID 1), etiqueta la conversación como `servicio_lento` y la deriva a `Soporte técnico`. **Importante:** No debe ofrecer test de velocidad.      |                    |          |
+| **D.3** | **Reporte "Avería en la Zona"** | 1. Siendo cliente validado, reportar "Hay un corte en el barrio" o "problema general". | El bot genera un ticket de "Problema general" (ID 10), etiqueta la conversación como `averia_en_la_zona` y deriva la conversación inmediatamente a `Soporte técnico` para atención humana.   |                    |          |
+| **D.4** | **Consulta de Último Ticket**   | 1. Siendo cliente validado, preguntar "¿cómo va mi reclamo?".                          | El bot consume la API para obtener el estado (abierto/cerrado) del último ticket y lo informa. Si el ticket está cerrado y el cliente pregunta por qué, el bot deriva a un agente humano.    |                    |          |
+
+### **Sección E: Información General (No requiere autenticación)**
+
+| N°      | Funcionalidad                       | Pasos para Probar                                                                               | Resultado Esperado                                                                                                | Resultado Obtenido | Validado |
+| :------ | :---------------------------------- | :---------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- | :----------------- | :------- |
+| **E.1** | **Consulta de Datos de la Empresa** | 1. Preguntar "¿Cuál es la dirección?" o "¿Hasta qué hora atienden?".                            | El bot responde con la dirección, link de Google Maps y horarios de atención, extrayendo la información de la KB. |                    |          |
+| **E.2** | **Consulta General (Derivación)**   | 1. Realizar una consulta general no cubierta en otros flujos (ej: "consultas administrativas"). | El bot solicita DNI (opcional) y el detalle de la consulta, y deriva a `Administración`.                          |                    |          |
 
 ---
 
-## ✍️ 6. Firma de Conformidad
+## 5. Requerimientos Fuera de Alcance (Versión 1.0)
+
+| N°   | Descripción del Requerimiento                                   | Motivo / Observaciones                                                                                                                                        |
+| :--- | :-------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1    | Verificación automática de cobertura geográfica en tiempo real. | **No viable en v1.0.** Requiere un desarrollo de microservicio dedicado y resultaría en altos costos de tokens y complejidad. Se gestiona derivando a Ventas. |
+| 2    | Reiteración automática de derivación tras 4 horas.              | **Limitación de plataforma.** Esta lógica debe ser gestionada por un agente o colaborador dentro de AsisteClick.                                              |
+| 3    | Archivado automático de chats tras 24 horas sin respuesta.      | **Limitación de plataforma.** Esta lógica debe ser gestionada por un agente o colaborador dentro de AsisteClick.                                              |
+
+---
+
+## 6. Firma de Conformidad
 
 La firma de este documento certifica que las funcionalidades descritas han sido validadas y el cliente GEO SA acepta la entrega de la versión 1.0 del Asistente Virtual.
 
-<br>
-<br>
+<br><br>
 
 ---
+
 **Por GEO SA:**
-<br>
+`<br>`
 [Nombre del Responsable]
-<br>
+`<br>`
 [Cargo]
 
-<br>
-<br>
+<br><br>
 
 ---
+
 **Por Asisteclick:**
-<br>
+`<br>`
 Luis Sánchez
-<br>
+`<br>`
 Bot Builder

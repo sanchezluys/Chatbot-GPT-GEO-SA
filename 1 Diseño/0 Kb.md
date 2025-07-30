@@ -215,14 +215,6 @@ Estos son los datos Bancarios 🏦 donde puedes abonar el servicio de forma elec
 
 Si aún no tienes los datos para abonar, puedes elegir la opción de "*Hablar con el personal administrativo*". 🙋‍♂️
 
-## Resumen de la cuenta
-
-✨  ¡Buenas noticias! Ahora podés acceder al resumen completo de tu cuenta de forma fácil y rápida. Consulta tu saldo, gestiona tus servicios y productos, y realiza pagos online, todo en un solo lugar diseñado para tu comodidad. 🧾
-
-*Accede al detalle completo de tu cuenta a través del siguiente enlace:* {{api_link_portal}}
-
-¡Gracias por tu confianza! 😊
-
 ## Días Feriados 2025
 
 | Fecha      | Tipo        | Nombre                                                    |
