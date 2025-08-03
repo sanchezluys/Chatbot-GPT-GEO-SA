@@ -53,12 +53,6 @@ Aprovecha nuestras ofertas y contrata la mejor conexión a internet que se ajust
 | 300 Mbps  | Teletrabajo intensivo, múltiples pantallas 4K        | Hasta 15 dispositivos   |
 | 600 Mbps  | Familias grandes, gaming competitivo, cargas pesadas | Más de 20 dispositivos  |
 
-## Ubicación y Precios por Zona
-
-- El cliente debe estar a menos de **150 metros** de una caja Nap de Geo S.A.
-- Se utiliza la **fórmula de Haversine** para calcular distancia entre dos puntos geográficos.
-- Radio terrestre: **6378 km (radio ecuatorial)**
-
 ### Troncales Especiales
 
 - **Troncal N11:**
@@ -95,9 +89,15 @@ Aprovecha nuestras ofertas y contrata la mejor conexión a internet que se ajust
 
 | Días                | Horario                       |
 | ------------------- | ----------------------------- |
-| Lunes a Viernes     | 08:00 – 13:00 / 16:00 – 20:00 |
+| Lunes               | 08:00 – 13:00 y 16:00 – 20:00 |
+| Martes              | 08:00 – 13:00 y 16:00 – 20:00 |
+| Miercoles           | 08:00 – 13:00 y 16:00 – 20:00 |
+| Jueves              | 08:00 – 13:00 y 16:00 – 20:00 |
+| Viernes             | 08:00 – 13:00 y 16:00 – 20:00 |
 | Sábados             | 08:00 – 13:00                 |
-| Domingos y Feriados | 08:00 – 13:00 / 15:00 – 18:00 |
+| Domingos            | 08:00 – 13:00 / 15:00 – 18:00 |
+| Feriados            | 08:00 – 13:00 / 15:00 – 18:00 |
+
 
 ## Dirección de la Empresa
 
