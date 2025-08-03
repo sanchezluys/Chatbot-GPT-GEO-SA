@@ -4,6 +4,38 @@ Este documento contiene la información esencial que el chatbot debe conocer par
 
 ## Planes y servicios de Internet
 
+### Planes Oferta
+
+"""
+*¡Ofertas de Noviembre en Geo Conexiones!* 📶 
+Aprovecha nuestras ofertas y contrata la mejor conexión a internet que se ajuste a tus necesidades:
+
+🌐 *Por Antena* 
+
+✔ *7 Mbps*
+• Ideal para: Navegación y redes sociales con hasta 2 dispositivos conectados.
+
+✔ *10 Mbps*
+• Ideal para: Streaming en HD y videollamadas en hasta 3 dispositivos.
+
+✔ *12 Mbps*
+• Ideal para: Streaming en HD y conexión estable con hasta 4 dispositivos.
+
+
+🚀 *Por Fibra Óptica*
+
+✔ *30 Mbps*
+• Ideal para: Video Full HD, trabajo remoto y hasta 5 dispositivos conectados.
+
+✔ *60 Mbps*
+• Ideal para: Hogares con varios usuarios, Full HD y hasta 8 dispositivos conectados.
+
+✔ *100 Mbps*
+• Ideal para: Streaming 4K, gaming en línea y hasta 10 dispositivos.
+
+💬 ¡No te pierdas esta oportunidad de conectarte con la mejor cobertura en Resistencia! En *Geo Conexiones*, llegamos a donde otros no pueden. Conecta tu hogar o negocio con la tecnología que necesitas.
+"""
+
 ### Planes por Antena
 
 | Velocidad | Uso recomendado                   | Dispositivos soportados |
@@ -214,6 +246,22 @@ Estos son los datos Bancarios 🏦 donde puedes abonar el servicio de forma elec
 ✔ *CPE*: {{api_cpe}}
 
 Si aún no tienes los datos para abonar, puedes elegir la opción de "*Hablar con el personal administrativo*". 🙋‍♂️
+
+## Políticas del contrato
+
+"""
+Es necesario que usted sepa acerca de lo siguiente:
+
+🔹 *Instalación y Pago:* Para solicitar cualquier servicio de *Geo S.A.*, la instalación puede abonarse de dos maneras:
+1. Pago único 💰 Sera abonado al instalador al momento de que le instala nuestro servicio. 
+2. En cuotas 📅 Si elige pagar en cuotas, la primera cuota le abonara al instalador en el momento de la instalación. Las siguientes cuotas se abonarán junto con el plan elegido el mes siguiente, del 1 al 10 de cada mes.
+
+🔹 *Coordinación con el Instalador:* Cuando le asignen un instalador, él se pondrá en contacto con usted para coordinar el día de la visita. Para ello, le pedimos que tenga listos los siguientes documentos:
+• Fotocopia de su DNI 🆔 
+• Fotocopia del pago de servicio o recibo de sueldo a su nombre 📄
+
+🔸 *Equipos en Comodato:* Todos los equipos entregados quedan en comodato 📦. Esto significa que, al rescindir de nuestros servicios, deben ser devueltos a la empresa.
+"""
 
 ## Días Feriados 2025
 
