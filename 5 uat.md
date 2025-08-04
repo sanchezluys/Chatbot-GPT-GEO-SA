@@ -29,52 +29,66 @@ Este documento tiene como objetivo validar que las funcionalidades del Asistente
 
 ## 4. Casos de Prueba
 
-### **Sección A: Menu Ventas**
+### **Sección A: Bloques principales**
 
-| N°           | Funcionalidad                      | Pasos para Probar | Resultado Esperado | Resultado Obtenido | Validado |
-| :------------ | :--------------------------------- | :---------------- | :----------------- | :----------------- | :------- |
-| **A.1** | Menu Ventas                        |                   |                    |                    |          |
-| A.2           | ventas.politicas                   |                   |                    |                    |          |
-| A.3           | ventas.planes                      |                   |                    |                    |          |
-| A.4           | ventas.horario y direccion         |                   |                    |                    |          |
-| A.5           | ventas.otras consultas             |                   |                    |                    |          |
-| A.6           | - otras consultas.reconexion       |                   |                    |                    |          |
-| A.7           | - otras consultas. otras consultas |                   |                    |                    |          |
-|               |                                    |                   |                    |                    |          |
+| N° | Funcionalidad                   | Pasos para Probar | Resultado Esperado | Resultado Obtenido | Validado |
+| :-- | :------------------------------ | :---------------- | :----------------- | :----------------- | :------- |
+| A.1 | buscar dni                      |                   |                    |                    |          |
+| A.2 | buscar telefono                 |                   |                    |                    |          |
+| A.3 | buscar datos del cliente        |                   |                    |                    |          |
+|     | - facturas abc                  |                   |                    |                    |          |
+|     | - ajustar var: mostrar informes |                   |                    |                    |          |
+| A.4 | buscar dispositivos del cliente |                   |                    |                    |          |
+| A.5 | estado servicios mostrar        |                   |                    |                    |          |
+|     |                                 |                   |                    |                    |          |
+|     |                                 |                   |                    |                    |          |
 
-### **Sección B: Horarios y Feriados**
+### **Sección B: Menu Ventas**
 
-| N°           | Funcionalidad                  | Pasos para Probar | Resultado Esperado | Resultado Obtenido | Validado |
-| :------------ | :----------------------------- | :---------------- | :----------------- | :----------------- | :------- |
-| **B.1** | Gestión de Horario No Laboral |                   |                    |                    |          |
-| **B.2**      | Gestión de Días Feriados     |                   |                    |                    |          |
-|               |                                |                   |                    |                    |          |
+| N° | Funcionalidad                      | Pasos para Probar | Resultado Esperado | Resultado Obtenido | Validado |
+| :-- | :--------------------------------- | :---------------- | :----------------- | :----------------- | :------- |
+| B.1 | Menu Ventas                        |                   |                    |                    |          |
+| B.2 | ventas.politicas                   |                   |                    |                    |          |
+| B.3 | ventas.planes                      |                   |                    |                    |          |
+| B.4 | ventas.horario y direccion         |                   |                    |                    |          |
+| B.5 | ventas.otras consultas             |                   |                    |                    |          |
+|     | - otras consultas.reconexion       |                   |                    |                    |          |
+|     | - otras consultas. otras consultas |                   |                    |                    |          |
+|     |                                    |                   |                    |                    |          |
 
-### **Sección C: Autogestión para Clientes** 
+### **Sección C: Horarios y Feriados**
 
-| N°           | Funcionalidad                                    | Pasos para Probar                                                                      | Resultado Esperado                                                                                                                                                                          | Resultado Obtenido | Validado |
-| :------------ | :----------------------------------------------- | :------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------- | :------- |
-| **C.1** | **Autenticación Exitosa (DNI/Teléfono)** | 1. Proporcionar un DNI o teléfono de cliente válido cuando el bot lo solicite.       | El bot confirma la identidad exitosamente y lo comunica al usuario.                                                                                                                         |                    |          |
-| **C.2** | **Consulta de Plan y Saldo**               | 1. Siendo un cliente validado, preguntar "¿Cuál es mi saldo y qué plan tengo?".     | El bot consume las APIs correspondientes y muestra el plan/conexiones activas y el saldo pendiente.                                                                                         |                    |          |
-| **C.3** | **Acceso al Portal (Cliente A/B/C)**       | 1. Siendo un cliente validado con factura A, B o C, pedir "dame los datos del portal". | El bot provee las credenciales `api_usuario_portal` y `api_clave_portal` y el link al portal.                                                                                           |                    |          |
-| **C.4** | **Acceso al Portal (Cliente sin A/B/C)**   | 1. Siendo un cliente validado sin factura A, B o C, pedir "dame los datos del portal". | El bot responde amablemente: "Tus credenciales para el portal aún no se encuentran disponibles", sin explicar el motivo.                                                                   |                    |          |
-| **C.5** | **Actualización de Datos de Contacto**    | 1. Siendo un cliente validado, solicitar "Quiero cambiar mi email".                    | El bot inicia el flujo de actualización, solicita el nuevo dato y utiliza el endpoint de la API para realizar el cambio. La conversación es etiquetada como `actualizar_datos_cliente`. |                    |          |
-| **C.6** | **Informar Pago**                          | 1. Siendo cliente validado, decir "quiero informar un pago" y adjuntar una imagen.     | El bot recibe la imagen y detalles, etiqueta la conversación como `informar_pago` y la deriva a `Administración`.                                                                     |                    |          |
-| **C.7** | **Solicitar Cambio de Plan**               | 1. Siendo cliente validado, solicitar "quiero cambiar mi plan".                        | El bot muestra los planes disponibles de la KB, pregunta cuál desea el cliente, etiqueta como `modificar_plan` y deriva a `Administración`.                                           |                    |          |
-| **C.8** | **Solicitud de Baja**                      | 1. Siendo cliente validado, solicitar "quiero la baja del servicio".                   | El bot genera un ticket de soporte, etiqueta la conversación como `solicitud_de_baja` y la asigna a `Soporte técnico`.                                                                |                    |          |
+| N° | Funcionalidad                  | Pasos para Probar | Resultado Esperado | Resultado Obtenido | Validado |
+| :-- | :----------------------------- | :---------------- | :----------------- | :----------------- | :------- |
+| C.1 | Gestión de Horario No Laboral |                   |                    |                    |          |
+| C.2 | Gestión de Días Feriados     |                   |                    |                    |          |
+|     |                                |                   |                    |                    |          |
 
-### **Sección D: Soporte Técnico y Tickets**
+### **Sección D: Autogestión para Clientes**
 
-| N°           | Funcionalidad | Pasos para Probar | Resultado Esperado | Resultado Obtenido | Validado |
-| :------------ | :------------ | :---------------- | :----------------- | :----------------- | :------- |
-| **D.1** |               |                   |                    |                    |          |
+| N° | Funcionalidad                                    | Pasos para Probar                                                                      | Resultado Esperado                                                                                                                                                                          | Resultado Obtenido | Validado |
+| :-- | :----------------------------------------------- | :------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------- | :------- |
+| D.1 | **Autenticación Exitosa (DNI/Teléfono)** | 1. Proporcionar un DNI o teléfono de cliente válido cuando el bot lo solicite.       | El bot confirma la identidad exitosamente y lo comunica al usuario.                                                                                                                         |                    |          |
+| D.2 | **Consulta de Plan y Saldo**               | 1. Siendo un cliente validado, preguntar "¿Cuál es mi saldo y qué plan tengo?".     | El bot consume las APIs correspondientes y muestra el plan/conexiones activas y el saldo pendiente.                                                                                         |                    |          |
+| D.3 | **Acceso al Portal (Cliente A/B/C)**       | 1. Siendo un cliente validado con factura A, B o C, pedir "dame los datos del portal". | El bot provee las credenciales `api_usuario_portal` y `api_clave_portal` y el link al portal.                                                                                           |                    |          |
+| D.4 | **Acceso al Portal (Cliente sin A/B/C)**   | 1. Siendo un cliente validado sin factura A, B o C, pedir "dame los datos del portal". | El bot responde amablemente: "Tus credenciales para el portal aún no se encuentran disponibles", sin explicar el motivo.                                                                   |                    |          |
+| D.5 | **Actualización de Datos de Contacto**    | 1. Siendo un cliente validado, solicitar "Quiero cambiar mi email".                    | El bot inicia el flujo de actualización, solicita el nuevo dato y utiliza el endpoint de la API para realizar el cambio. La conversación es etiquetada como `actualizar_datos_cliente`. |                    |          |
+| D.6 | **Informar Pago**                          | 1. Siendo cliente validado, decir "quiero informar un pago" y adjuntar una imagen.     | El bot recibe la imagen y detalles, etiqueta la conversación como `informar_pago` y la deriva a `Administración`.                                                                     |                    |          |
+| D.7 | **Solicitar Cambio de Plan**               | 1. Siendo cliente validado, solicitar "quiero cambiar mi plan".                        | El bot muestra los planes disponibles de la KB, pregunta cuál desea el cliente, etiqueta como `modificar_plan` y deriva a `Administración`.                                           |                    |          |
+| D.8 | **Solicitud de Baja**                      | 1. Siendo cliente validado, solicitar "quiero la baja del servicio".                   | El bot genera un ticket de soporte, etiqueta la conversación como `solicitud_de_baja` y la asigna a `Soporte técnico`.                                                                |                    |          |
 
-### **Sección E: Información General (No requiere autenticación)**
+### **Sección E: Soporte Técnico y Tickets**
 
-| N°           | Funcionalidad | Pasos para Probar | Resultado Esperado | Resultado Obtenido | Validado |
-| :------------ | :------------ | :---------------- | :----------------- | :----------------- | :------- |
-| **E.1** |               |                   |                    |                    |          |
-| **E.2** |               |                   |                    |                    |          |
+| N° | Funcionalidad | Pasos para Probar | Resultado Esperado | Resultado Obtenido | Validado |
+| :-- | :------------ | :---------------- | :----------------- | :----------------- | :------- |
+| E.1 |               |                   |                    |                    |          |
+
+### **Sección F: Información General (No requiere autenticación)**
+
+| N° | Funcionalidad | Pasos para Probar | Resultado Esperado | Resultado Obtenido | Validado |
+| :-- | :------------ | :---------------- | :----------------- | :----------------- | :------- |
+| F.1 |               |                   |                    |                    |          |
+| F.2 |               |                   |                    |                    |          |
 
 ---
 
