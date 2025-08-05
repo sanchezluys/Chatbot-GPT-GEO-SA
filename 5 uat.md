@@ -31,38 +31,38 @@ Este documento tiene como objetivo validar que las funcionalidades del Asistente
 
 ### **Sección A: Bloques principales**
 
-| N° | Funcionalidad                   | Pasos para Probar | Resultado Esperado | Resultado Obtenido | Validado |
-| :-- | :------------------------------ | :---------------- | :----------------- | :----------------- | :------- |
-| A.1 | buscar dni                      |                   |                    |                    |          |
-| A.2 | buscar telefono                 |                   |                    |                    |          |
-| A.3 | buscar datos del cliente        |                   |                    |                    |          |
-|     | - facturas abc                  |                   |                    |                    |          |
-|     | - ajustar var: mostrar informes |                   |                    |                    |          |
-| A.4 | buscar dispositivos del cliente |                   |                    |                    |          |
-| A.5 | estado servicios mostrar        |                   |                    |                    |          |
-|     |                                 |                   |                    |                    |          |
-|     |                                 |                   |                    |                    |          |
+| N° | Funcionalidad                   | Pasos para Probar | Resultado Esperado                             | Resultado Obtenido                                  | Validado |
+| :-- | :------------------------------ | :---------------- | :--------------------------------------------- | :-------------------------------------------------- | :------- |
+| A.1 | buscar dni                      |                   | Pendiente: ajustar a Tu saldo actual es numero | ✅ valida ok por dni<br />⚠️ ajustar mensaje      |          |
+| A.2 | buscar telefono                 |                   | Pendiente ajustar mensaje                      | ✅ valida ok por telefono<br />⚠️ ajustar mensaje |          |
+| A.3 | buscar datos del cliente        |                   |                                                |                                                     |          |
+|     | - facturas abc                  |                   |                                                | ✅                                                  | ✅       |
+|     | - ajustar var: mostrar informes |                   |                                                |                                                     |          |
+| A.4 | buscar dispositivos del cliente |                   |                                                |                                                     |          |
+| A.5 | estado servicios mostrar        |                   |                                                |                                                     |          |
+|     |                                 |                   |                                                |                                                     |          |
+|     |                                 |                   |                                                |                                                     |          |
 
 ### **Sección B: Menu Ventas**
 
-| N° | Funcionalidad                      | Pasos para Probar | Resultado Esperado | Resultado Obtenido | Validado |
-| :-- | :--------------------------------- | :---------------- | :----------------- | :----------------- | :------- |
-| B.1 | Menu Ventas                        |                   |                    |                    |          |
-| B.2 | ventas.politicas                   |                   |                    |                    |          |
-| B.3 | ventas.planes                      |                   |                    |                    |          |
-| B.4 | ventas.horario y direccion         |                   |                    |                    |          |
-| B.5 | ventas.otras consultas             |                   |                    |                    |          |
-|     | - otras consultas.reconexion       |                   |                    |                    |          |
-|     | - otras consultas. otras consultas |                   |                    |                    |          |
-|     |                                    |                   |                    |                    |          |
+| N° | Funcionalidad                      | Pasos para Probar             | Resultado Esperado | Resultado Obtenido            | Validado |
+| :-- | :--------------------------------- | :---------------------------- | :----------------- | :---------------------------- | :------- |
+| B.1 | Menu Ventas                        | Muestra las opciones          |                    | ✅                            | ✅       |
+| B.2 | ventas.politicas                   | Pedir las politicas           |                    | ✅                            | ✅       |
+| B.3 | ventas.planes                      | Mostrar los planes            |                    | ✅                            | ✅       |
+| B.4 | ventas.horario y direccion         | Preguntar horario y direccion |                    | ✅ Direccion<br />✅ Horarios | ✅       |
+| B.5 | ventas.otras consultas             |                               |                    |                               |          |
+|     | - otras consultas.reconexion       | ⚠️ ajustar prompt           |                    |                               |          |
+|     | - otras consultas. otras consultas | ⚠️ ajustar prompt           |                    |                               |          |
+|     |                                    |                               |                    |                               |          |
 
 ### **Sección C: Horarios y Feriados**
 
-| N° | Funcionalidad                  | Pasos para Probar | Resultado Esperado | Resultado Obtenido | Validado |
-| :-- | :----------------------------- | :---------------- | :----------------- | :----------------- | :------- |
-| C.1 | Gestión de Horario No Laboral |                   |                    |                    |          |
-| C.2 | Gestión de Días Feriados     |                   |                    |                    |          |
-|     |                                |                   |                    |                    |          |
+| N° | Funcionalidad                  | Pasos para Probar       | Resultado Esperado | Resultado Obtenido | Validado |
+| :-- | :----------------------------- | :---------------------- | :----------------- | :----------------- | :------- |
+| C.1 | Gestión de Horario No Laboral | preguntar el horario    |                    | ✅                 | ✅       |
+| C.2 | Gestión de Días Feriados     | preguntar si es feriado |                    | ✅                 | ✅       |
+|     |                                |                         |                    |                    |          |
 
 ### **Sección D: Autogestión para Clientes**
 
@@ -76,6 +76,12 @@ Este documento tiene como objetivo validar que las funcionalidades del Asistente
 | D.6 | **Informar Pago**                          | 1. Siendo cliente validado, decir "quiero informar un pago" y adjuntar una imagen.     | El bot recibe la imagen y detalles, etiqueta la conversación como `informar_pago` y la deriva a `Administración`.                                                                     |                    |          |
 | D.7 | **Solicitar Cambio de Plan**               | 1. Siendo cliente validado, solicitar "quiero cambiar mi plan".                        | El bot muestra los planes disponibles de la KB, pregunta cuál desea el cliente, etiqueta como `modificar_plan` y deriva a `Administración`.                                           |                    |          |
 | D.8 | **Solicitud de Baja**                      | 1. Siendo cliente validado, solicitar "quiero la baja del servicio".                   | El bot genera un ticket de soporte, etiqueta la conversación como `solicitud_de_baja` y la asigna a `Soporte técnico`.                                                                |                    |          |
+|     | Informar plan del cliente                        | ⚠️                                                                                   |                                                                                                                                                                                             |                    |          |
+|     | Conexiones del cliente                           | ⚠️                                                                                   |                                                                                                                                                                                             |                    |          |
+|     |                                                  |                                                                                        |                                                                                                                                                                                             |                    |          |
+|     |                                                  |                                                                                        |                                                                                                                                                                                             |                    |          |
+|     |                                                  |                                                                                        |                                                                                                                                                                                             |                    |          |
+|     |                                                  |                                                                                        |                                                                                                                                                                                             |                    |          |
 
 ### **Sección E: Soporte Técnico y Tickets**
 
@@ -124,3 +130,7 @@ La firma de este documento certifica que las funcionalidades descritas han sido 
 Luis Sánchez
 `<br>`
 Bot Builder
+
+Revisiones 5/8/2025
+
+[ubicacion google maps: Coordenadas que deben tomarse validas, en el sistema debe cargarlo como coordenadas LAT,LNG: -27.409326553345,-58.953578948975               Ese es un formato valido, pero, podria realizarse un parsing y reestructuracion de los siguientes links de google ya que contienen la misma informacion en el link pero puesta de otra manera: ?api=1&amp;query=-27.409326553345,-58.953578948975            tambien https://www.google.com/maps/search/?api=1&amp;query=-27.409326553345,-58.953578948975    y tambien: https://www.google.com/maps/place/27%C2%B024&#39;33.6%22S+58%C2%B057&#39;12.9%22W/@-27.4093266,-58.9535789,679m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d-27.4093266!4d-58.9535789?entry=ttu&amp;g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D]()

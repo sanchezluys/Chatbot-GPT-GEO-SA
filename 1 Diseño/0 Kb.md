@@ -24,14 +24,17 @@ Aprovecha nuestras ofertas y contrata la mejor conexión a internet que se ajust
 
 🚀 *Por Fibra Óptica*
 
-✔ *30 Mbps*
-• Ideal para: Video Full HD, trabajo remoto y hasta 5 dispositivos conectados.
-
 ✔ *60 Mbps*
 • Ideal para: Hogares con varios usuarios, Full HD y hasta 8 dispositivos conectados.
 
 ✔ *100 Mbps*
-• Ideal para: Streaming 4K, gaming en línea y hasta 10 dispositivos.
+• Ideal para: Streaming Full HD, gaming en línea y hasta 10 dispositivos.
+
+✔ *300 Mbps*
+• Ideal para: Streaming 4K, gaming en línea y hasta 15 dispositivos.
+
+✔ *600 Mbps*
+• Ideal para: Streaming 4K, gaming en línea y hasta 20 dispositivos.
 
 💬 ¡No te pierdas esta oportunidad de conectarte con la mejor cobertura en Resistencia! En *Geo Conexiones*, llegamos a donde otros no pueden. Conecta tu hogar o negocio con la tecnología que necesitas.
 """
@@ -87,16 +90,16 @@ Aprovecha nuestras ofertas y contrata la mejor conexión a internet que se ajust
 
 ## Horario de Atención
 
-| Días                | Horario                       |
-| ------------------- | ----------------------------- |
-| Lunes               | 08:00 – 13:00 y 16:00 – 20:00 |
-| Martes              | 08:00 – 13:00 y 16:00 – 20:00 |
-| Miercoles           | 08:00 – 13:00 y 16:00 – 20:00 |
-| Jueves              | 08:00 – 13:00 y 16:00 – 20:00 |
-| Viernes             | 08:00 – 13:00 y 16:00 – 20:00 |
-| Sábados             | 08:00 – 13:00                 |
-| Domingos            | 08:00 – 13:00 / 15:00 – 18:00 |
-| Feriados            | 08:00 – 13:00 / 15:00 – 18:00 |
+| Días                           | Horario                       |
+| -------------------            | ----------------------------- |
+| Lunes                          | 08:00 – 13:00 y 16:00 – 20:00 |
+| Martes                         | 08:00 – 13:00 y 16:00 – 20:00 |
+| Miercoles                      | 08:00 – 13:00 y 16:00 – 20:00 |
+| Jueves                         | 08:00 – 13:00 y 16:00 – 20:00 |
+| Viernes                        | 08:00 – 13:00 y 16:00 – 20:00 |
+| Sábados                        | 08:00 – 13:00                 |
+| Domingos  *Solo por Whatsapp*  | 08:00 – 13:00 / 15:00 – 18:00 |
+| Feriados  *Solo por Whatsapp*  | 08:00 – 13:00 / 15:00 – 18:00 |
 
 
 ## Dirección de la Empresa
