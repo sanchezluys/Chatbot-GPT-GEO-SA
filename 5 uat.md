@@ -51,6 +51,8 @@ Este documento tiene como objetivo validar que las funcionalidades del Asistente
 | B.2 | ventas.politicas                   | Pedir las politicas           |                    | ✅                            | ✅       |
 | B.3 | ventas.planes                      | Mostrar los planes            |                    | ✅                            | ✅       |
 | B.4 | ventas.horario y direccion         | Preguntar horario y direccion |                    | ✅ Direccion<br />✅ Horarios | ✅       |
+| B.5 | ventas. contratar servicio         |                               |                    |                               |          |
+|     | - crear ticket de instalacion      |                               |                    |                               |          |
 | B.5 | ventas.otras consultas             |                               |                    |                               |          |
 |     | - otras consultas.reconexion       | ⚠️ ajustar prompt           |                    |                               |          |
 |     | - otras consultas. otras consultas | ⚠️ ajustar prompt           |                    |                               |          |
