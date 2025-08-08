@@ -35,28 +35,31 @@ Este documento tiene como objetivo validar que las funcionalidades del Asistente
 | :-- | :------------------------------ | :---------------- | :--------------------------------------------- | :-------------------------------------------------- | :------- |
 | A.1 | buscar dni                      |                   | Pendiente: ajustar a Tu saldo actual es numero | ✅ valida ok por dni<br />⚠️ ajustar mensaje      |          |
 | A.2 | buscar telefono                 |                   | Pendiente ajustar mensaje                      | ✅ valida ok por telefono<br />⚠️ ajustar mensaje |          |
-| A.3 | buscar datos del cliente        |                   |                                                |                                                     |          |
+| A.3 | buscar datos del cliente        |                   |                                                | ✅                                                  |          |
 |     | - facturas abc                  |                   |                                                | ✅                                                  | ✅       |
-|     | - ajustar var: mostrar informes |                   |                                                |                                                     |          |
-| A.4 | buscar dispositivos del cliente |                   |                                                |                                                     |          |
+|     | - ajustar var: mostrar informes |                   | ⚠️                                           |                                                     |          |
+| A.4 |                                 |                   |                                                |                                                     |          |
 | A.5 | estado servicios mostrar        |                   |                                                |                                                     |          |
 |     |                                 |                   |                                                |                                                     |          |
 |     |                                 |                   |                                                |                                                     |          |
 
 ### **Sección B: Menu Ventas**
 
-| N° | Funcionalidad                      | Pasos para Probar             | Resultado Esperado | Resultado Obtenido            | Validado |
-| :-- | :--------------------------------- | :---------------------------- | :----------------- | :---------------------------- | :------- |
-| B.1 | Menu Ventas                        | Muestra las opciones          |                    | ✅                            | ✅       |
-| B.2 | ventas.politicas                   | Pedir las politicas           |                    | ✅                            | ✅       |
-| B.3 | ventas.planes                      | Mostrar los planes            |                    | ✅                            | ✅       |
-| B.4 | ventas.horario y direccion         | Preguntar horario y direccion |                    | ✅ Direccion<br />✅ Horarios | ✅       |
-| B.5 | ventas. contratar servicio         |                               |                    |                               |          |
-|     | - crear ticket de instalacion      |                               |                    |                               |          |
-| B.5 | ventas.otras consultas             |                               |                    |                               |          |
-|     | - otras consultas.reconexion       | ⚠️ ajustar prompt           |                    |                               |          |
-|     | - otras consultas. otras consultas | ⚠️ ajustar prompt           |                    |                               |          |
-|     |                                    |                               |                    |                               |          |
+| N° | Funcionalidad                 | Pasos para Probar             | Resultado Esperado | Resultado Obtenido            | Validado |
+| :-- | :---------------------------- | :---------------------------- | :----------------- | :---------------------------- | :------- |
+| B.1 | Menu Ventas                   | Muestra las opciones          |                    | ✅                            | ✅       |
+| B.2 | ventas.politicas              | Pedir las politicas           |                    | ✅                            | ✅       |
+| B.3 | ventas.planes                 | Mostrar los planes            |                    | ✅                            | ✅       |
+| B.4 | ventas.horario y direccion    | Preguntar horario y direccion |                    | ✅ Direccion<br />✅ Horarios | ✅       |
+| B.5 | ventas. contratar servicio    |                               |                    |                               |          |
+|     | - crear ticket de instalacion |                               |                    |                               |          |
+| B.5 | ventas.otras consultas        |                               |                    |                               |          |
+|     | - otras consultas.reconexion  | ⚠️ ajustar prompt           |                    |                               |          |
+|     | - otras consultas.            | ⚠️ ajustar prompt           |                    |                               |          |
+|     | --- a clientes:               | ⚠️ ajustar prompt           |                    |                               |          |
+|     | --- a externos:               | ⚠️ ajustar prompt           |                    |                               |          |
+|     |                               |                               |                    |                               |          |
+|     |                               |                               |                    |                               |          |
 
 ### **Sección C: Horarios y Feriados**
 
@@ -78,8 +81,8 @@ Este documento tiene como objetivo validar que las funcionalidades del Asistente
 | D.6 | **Informar Pago**                          | 1. Siendo cliente validado, decir "quiero informar un pago" y adjuntar una imagen.     | El bot recibe la imagen y detalles, etiqueta la conversación como `informar_pago` y la deriva a `Administración`.                                                                     |                    |          |
 | D.7 | **Solicitar Cambio de Plan**               | 1. Siendo cliente validado, solicitar "quiero cambiar mi plan".                        | El bot muestra los planes disponibles de la KB, pregunta cuál desea el cliente, etiqueta como `modificar_plan` y deriva a `Administración`.                                           |                    |          |
 | D.8 | **Solicitud de Baja**                      | 1. Siendo cliente validado, solicitar "quiero la baja del servicio".                   | El bot genera un ticket de soporte, etiqueta la conversación como `solicitud_de_baja` y la asigna a `Soporte técnico`.                                                                |                    |          |
-|     | Informar plan del cliente                        | ⚠️                                                                                   |                                                                                                                                                                                             |                    |          |
-|     | Conexiones del cliente                           | ⚠️                                                                                   |                                                                                                                                                                                             |                    |          |
+|     | Informar plan del cliente,<br />'mi_plan'        | ⚠️                                                                                   |                                                                                                                                                                                             |                    |          |
+|     | Conexiones del cliente,<br />'mis_conexiones'    | ⚠️                                                                                   |                                                                                                                                                                                             |                    |          |
 |     |                                                  |                                                                                        |                                                                                                                                                                                             |                    |          |
 |     |                                                  |                                                                                        |                                                                                                                                                                                             |                    |          |
 |     |                                                  |                                                                                        |                                                                                                                                                                                             |                    |          |

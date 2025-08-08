@@ -1,4 +1,4 @@
-# Knowledge Base KB - Geo
+## Knowledge Base KB - Geo
 
 Este documento contiene la información esencial que el chatbot debe conocer para responder consultas relacionadas con servicios, precios, ubicaciones, horarios y promociones de Geo S.A.
 
