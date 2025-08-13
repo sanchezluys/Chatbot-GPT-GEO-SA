@@ -1,4 +1,4 @@
-## Knowledge Base KB - Geo
+# Knowledge Base KB - Geo
 
 Este documento contiene la información esencial que el chatbot debe conocer para responder consultas relacionadas con servicios, precios, ubicaciones, horarios y promociones de Geo S.A.
 
@@ -90,16 +90,16 @@ Aprovecha nuestras ofertas y contrata la mejor conexión a internet que se ajust
 
 ## Horario de Atención
 
-| Días                           | Horario                       |
-| -------------------            | ----------------------------- |
-| Lunes                          | 08:00 – 13:00 y 16:00 – 20:00 |
-| Martes                         | 08:00 – 13:00 y 16:00 – 20:00 |
-| Miercoles                      | 08:00 – 13:00 y 16:00 – 20:00 |
-| Jueves                         | 08:00 – 13:00 y 16:00 – 20:00 |
-| Viernes                        | 08:00 – 13:00 y 16:00 – 20:00 |
-| Sábados                        | 08:00 – 13:00                 |
-| Domingos  *Solo por Whatsapp*  | 08:00 – 13:00 / 15:00 – 18:00 |
-| Feriados  *Solo por Whatsapp*  | 08:00 – 13:00 / 15:00 – 18:00 |
+| Días                          | Horario                       |
+| ----------------------------- | ----------------------------- |
+| Lunes                         | 08:00 – 13:00 y 16:00 – 20:00 |
+| Martes                        | 08:00 – 13:00 y 16:00 – 20:00 |
+| Miercoles                     | 08:00 – 13:00 y 16:00 – 20:00 |
+| Jueves                        | 08:00 – 13:00 y 16:00 – 20:00 |
+| Viernes                       | 08:00 – 13:00 y 16:00 – 20:00 |
+| Sábados                       | 08:00 – 13:00                 |
+| Domingos  *Solo por Whatsapp* | 08:00 – 13:00 / 15:00 – 18:00 |
+| Feriados  *Solo por Whatsapp* | 08:00 – 13:00 / 15:00 – 18:00 |
 
 
 ## Dirección de la Empresa
