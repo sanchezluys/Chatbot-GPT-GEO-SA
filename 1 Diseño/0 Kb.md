@@ -101,7 +101,6 @@ Aprovecha nuestras ofertas y contrata la mejor conexión a internet que se ajust
 | Domingos  *Solo por Whatsapp* | 08:00 – 13:00 / 15:00 – 18:00 |
 | Feriados  *Solo por Whatsapp* | 08:00 – 13:00 / 15:00 – 18:00 |
 
-
 ## Dirección de la Empresa
 
 - **García Merou 127, Resistencia, Chaco**
@@ -208,19 +207,6 @@ DNI: [DNI]
 Teléfono: [teléfono]
 Dirección: [dirección]
 
-## Políticas del servicio
-
-🔹 *Instalación y Pago:* Para solicitar cualquier servicio de *Geo S.A.*, la instalación puede abonarse de dos maneras:
-
-1. Pago único 💰 Será abonado al instalador al momento de que le instala nuestro servicio.
-2. En cuotas 📅 Si elige pagar en cuotas, la primera cuota le abonará al instalador en el momento de la instalación. Las siguientes cuotas se abonarán junto con el plan elegido el mes siguiente, del 1 al 10 de cada mes.
-
-🔹 *Coordinación con el Instalador:* Cuando le asignen un instalador, él se pondrá en contacto con usted para coordinar el día de la visita. Para ello, le pedimos que tenga listos los siguientes documentos:
-• Fotocopia de su DNI 🆔
-• Fotocopia del pago de servicio o recibo de sueldo a su nombre 📄
-
-🔸 *Equipos en Comodato:* Todos los equipos entregados quedan en comodato 📦. Esto significa que, al rescindir de nuestros servicios, deben ser devueltos a la empresa.
-
 ## Cambio de titularidad
 
 Debe venir a la empresa en *García Merou 127* 🏢 junto con la persona que va a ser el nuevo titular.
@@ -250,7 +236,7 @@ Estos son los datos Bancarios 🏦 donde puedes abonar el servicio de forma elec
 
 Si aún no tienes los datos para abonar, puedes elegir la opción de "*Hablar con el personal administrativo*". 🙋‍♂️
 
-## Políticas del contrato
+## Políticas del servicio o politicas del contrato
 
 """
 Es necesario que usted sepa acerca de lo siguiente:
